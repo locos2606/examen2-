@@ -70,14 +70,10 @@ public class Planeta {
     public void setObservable(boolean observable) {
         this.observable = observable;
     }
-
-    // Método para calcular la densidad del planeta
     public double calcularDensidad() {
         double densidad = masa / volumen;
         return densidad;
     }
-
-    // Método para imprimir la información del planeta
     public void imprimir() {
         System.out.println("Nombre: " + nombre);
         System.out.println("Satélites: " + satelites);
@@ -87,8 +83,6 @@ public class Planeta {
         System.out.println("Distancia al sol: " + distanciaSol + " km");
         System.out.println("Observable: " + observable);
     }
-
-    // Método main
     public static void main(String[] args) {
         Planeta tierra = new Planeta("Tierra", 1, 5.9736E24, 1.08321E12, 12742, 150000000, true);
         tierra.imprimir();
